@@ -1,0 +1,62 @@
+/* Swiper container styling */
+.productslider {
+  width: 100%;
+  padding: 20px 0; /* Add padding above and below the slider */
+}
+
+/* Styling for the link inside each slide */
+.productslider .slider-link {
+  text-decoration: none; /* Remove the underline from links */
+  display: block;
+  color: inherit; /* Inherit the color from the parent element */
+}
+
+/* Container for the images inside the slides */
+.productslider .sliderimages img {
+  width: 350px; /* Make the image take up the full width of its container */
+  height: auto; /* Maintain aspect ratio */
+  display: block; /* Remove any extra spacing around the image */
+}
+
+/* Title container styling */
+.productslider .productslider .slider-title {
+  margin-top: 15px; /* Space between the image and the title */
+  text-align: center; /* Center align the title */
+}
+
+/* Title text styling */
+.productslider .slider-title h3 {
+  color: white; /* White text color */
+  font-size: 1.1em; /* Adjust font size */
+  margin: 0; /* Remove default margins */
+}
+
+/* Responsive Adjustments */
+
+/* Tablet screens */
+@media (max-width: 1024px) {
+  .productslider .slider-title h3 {
+    font-size: 1.1em; /* Slightly smaller font */
+  }
+}
+
+/* Large mobile screens */
+@media (max-width: 768px) {
+  .productslider .slider-title h3 {
+    font-size: 1em; /* Even smaller font */
+  }
+}
+
+/* Medium mobile screens */
+@media (max-width: 640px) {
+  .productslider .slider-title h3 {
+    font-size: 0.9em; /* Further reduced font size */
+  }
+}
+
+/* Small mobile screens */
+@media (max-width: 480px) {
+  .productslider .slider-title h3 {
+    font-size: 0.8em; /* Smallest font size for small screens */
+  }
+}

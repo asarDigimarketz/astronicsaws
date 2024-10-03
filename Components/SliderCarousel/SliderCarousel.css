@@ -1,0 +1,227 @@
+/* General Carousel Styles */
+.carousel {
+  width: 100%;
+  flex: 1;
+  position: relative;
+  z-index: 0;
+  height: calc(
+    35vh + 25vw
+  ); /* Dynamic height based on viewport height and width */
+  overflow: hidden;
+}
+
+.mySwiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  z-index: 0;
+}
+
+/* Responsive Headings */
+.heading-xl,
+.heading-lg,
+.heading-md,
+.heading-sm,
+.heading-xs {
+  font-family: inherit;
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+/* Paragraph */
+.paragraph {
+  font-family: inherit;
+  font-size: clamp(1rem, 2vw, 1.125rem);
+  color: var(--color-white-200);
+}
+
+/* Swiper Slide Overlay */
+.swiper-slide-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  color: #fff;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: white;
+  opacity: 1;
+}
+
+/* Media Queries for Smaller Devices */
+
+/* Large Desktop (max-width: 2000px) */
+@media (min-width: 2000px) {
+  .carousel {
+    height: calc(35vh + 30vw); /* Adjusted height for smaller screens */
+  }
+}
+@media (max-width: 1600px) {
+  .carousel {
+    height: calc(50vh + 20vw); /* Adjusted height for smaller screens */
+  }
+}
+@media (max-width: 1400px) {
+  .carousel {
+    height: calc(20vh + 30vw); /* Adjusted height for smaller screens */
+  }
+}
+@media (max-width: 1200px) {
+  .carousel {
+    height: calc(16vh + 30vw); /* Adjusted height for smaller screens */
+  }
+}
+
+/* Smaller Tablets (max-width: 992px) */
+@media (max-width: 992px) {
+  .carousel {
+    height: calc(200px + 12vh); /* Approximation of calc(35vh + 18vw) */
+  }
+}
+
+/* Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .carousel {
+    height: calc(200px + 15vh); /* Approximation of calc(27vh + 20vw) */
+  }
+
+  .swiper-slide-overlay {
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+  }
+
+  .heading-xl {
+    font-size: 48px; /* Converted from clamp(1.875rem, 5vw, 3rem) */
+  }
+
+  .heading-lg {
+    font-size: 40px; /* Converted from clamp(1.5rem, 4vw, 2.5rem) */
+  }
+
+  .heading-md {
+    font-size: 32px; /* Converted from clamp(1.25rem, 3.5vw, 2rem) */
+  }
+
+  .heading-sm {
+    font-size: 24px; /* Converted from clamp(1rem, 3vw, 1.5rem) */
+  }
+
+  .heading-xs {
+    font-size: 18px; /* Converted from clamp(0.875rem, 2.5vw, 1.125rem) */
+  }
+
+  .paragraph {
+    font-size: 16px; /* Converted from clamp(0.875rem, 2vw, 1rem) */
+  }
+}
+
+/* Small Devices (max-width: 450px) */
+@media (max-width: 700px) {
+  .carousel {
+    height: calc(200px + 15vh); /* Approximation of calc(26vh + 17vw) */
+  }
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    height: calc(190px + 10vh); /* Approximation of calc(25vh + 12vw) */
+  }
+}
+
+@media (max-width: 450px) {
+  .carousel {
+    height: calc(170px + 5px); /* Approximation of calc(24vh + 8vw) */
+  }
+
+  .swiper-slide-overlay {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .heading-xl {
+    font-size: 40px; /* Converted from clamp(1.5rem, 4vw, 2.5rem) */
+  }
+
+  .heading-lg {
+    font-size: 32px; /* Converted from clamp(1.25rem, 3.5vw, 2rem) */
+  }
+
+  .heading-md {
+    font-size: 24px; /* Converted from clamp(1rem, 3vw, 1.5rem) */
+  }
+
+  .heading-sm {
+    font-size: 20px; /* Converted from clamp(0.875rem, 2.5vw, 1.25rem) */
+  }
+
+  .heading-xs {
+    font-size: 16px; /* Converted from clamp(0.75rem, 2vw, 1rem) */
+  }
+
+  .paragraph {
+    font-size: 14px; /* Converted from clamp(0.75rem, 1.5vw, 0.875rem) */
+  }
+}
+
+/* Very Small Devices (max-width: 400px) */
+@media (max-width: 400px) {
+  .carousel {
+    height: 153px; /* Approximation of calc(22vh + 6vw) */
+  }
+
+  .swiper-slide-overlay {
+    width: 100%;
+    padding: 8px;
+    text-align: center;
+  }
+
+  .heading-xl {
+    font-size: 36px; /* Converted from clamp(1.5rem, 4.5vw, 2.5rem) */
+  }
+
+  .heading-lg {
+    font-size: 32px; /* Converted from clamp(1.25rem, 4vw, 2rem) */
+  }
+
+  .heading-md {
+    font-size: 28px; /* Converted from clamp(1.125rem, 3.5vw, 1.75rem) */
+  }
+
+  .heading-sm {
+    font-size: 24px; /* Converted from clamp(1rem, 3vw, 1.25rem) */
+  }
+
+  .heading-xs {
+    font-size: 16px; /* Converted from clamp(0.75rem, 2.5vw, 1rem) */
+  }
+
+  .paragraph {
+    font-size: 12px; /* Converted from clamp(0.75rem, 2vw, 0.875rem) */
+  }
+}
